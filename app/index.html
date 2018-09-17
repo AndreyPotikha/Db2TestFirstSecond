@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	
+		<h1>SWAPI TEST</h1>
+		<br>
+		<div class="select">
+			<div id="films">
+				<p>Films</p>
+			</div>
+			<div id="peoples">
+				<p>People</p>
+			</div>
+			<div id="planets">
+				<p>Planets</p>
+			</div>
+			<div id="species">
+				<p>Species</p>
+			</div>
+			<div id="starships">
+				<p>Starships</p>
+			</div>
+			<div id="vehicles">
+				<p>Vehicles</p>
+			</div>
+		</div>
+
+		<div class="help">
+			<div>
+				<p>Sort:</p>
+				<form action="sort()"></form>
+				<select id="sort-by-name">
+					<option>None</option>
+					<option id="sort-up">Sort by name up</option>
+					<option id="sort-down">Sort by name down</option>
+				</select>
+			</div>
+			<div>
+				<input id="search" type="text" placeholder="Search..">
+			</div>
+		</div>
+			
+			<div class="info">
+				<div class="info-block" id="films-info">
+					<div class="list" id="film-list"></div>
+					<div class="detailed-info" id="film-info">
+							<p>Characters</p>
+						<ul id="film-info-characters"></ul>
+						<p>Planets</p>
+						<ul id="film-info-planets"></ul>	
+						<p>Starships</p>
+						<ul id="film-info-starships"></ul>	
+						<p>Vehicles</p>
+						<ul id="film-info-vehicles"></ul>	
+						<p>Species</p>
+						<ul id="film-info-species"></ul>	
+					</div>
+				</div>
+
+				<div class="info-block" id="people-info">
+					<div class="list" id="people-list"></div>
+					<div class="detailed-info" id="people-idetailed-info">
+						<p>Films</p>
+						<ul id="people-idetailed-info-films"></ul>
+						<p>Species</p>
+						<ul id="people-idetailed-info-species"></ul>	
+						<p>Vehicles</p>
+						<ul id="people-idetailed-info-vehicles"></ul>	
+						<p>Starships</p>
+						<ul id="people-idetailed-info-starships"></ul>	
+					</div>
+				</div>
+				<div class="info-block" id="planets-info">
+					<div class="list" id="planets-list"></div>
+					<div class="detailed-info" id="planets-detailed-info">
+						<p>Residents</p>
+						<ul id="planets-detailed-info-residents"></ul>
+						<p>Films</p>
+						<ul id="planets-detailed-info-films"></ul>	
+					</div>
+				</div>
+				<div class="info-block" id="species-info">
+					<div class="list" id="species-list"></div>
+					<div class="detailed-info" id="species-idetailed-info">
+						<p>People</p>
+						<ul id="species-idetailed-info-people"></ul>
+						<p>Films</p>
+						<ul id="species-idetailed-info-films"></ul>	
+					</div>
+				</div>
+				<div class="info-block" id="starships-info">
+					<div class="list" id="starships-list"></div>
+					<div class="detailed-info" id="starships-idetailed-info">
+						<p>Films</p>
+						<ul id="starships-idetailed-info-films"></ul>	
+					</div>
+				</div>
+				<div class="info-block" id="vehicles-info">
+					<div class="list" id="vehicles-list"></div>
+					<div class="detailed-info" id="vehicles-idetailed-info">
+						<p>Pilots</p>
+						<ul id="vehicles-idetailed-info-pilots"></ul>
+						<p>Films</p>
+						<ul id="vehicles-idetailed-info-films"></ul>	
+					</div>
+				</div>
+			</div>
+		</div>
+
+<ul id="table"></ul>
+
+	<script src="js/libs.min.js"></script>
+	<script src="js/common.js"></script>
+	
+</body>
+</html>
